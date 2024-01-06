@@ -26,6 +26,7 @@
 
     <link href="css/app.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -41,12 +42,19 @@
           </a>
 
           <ul class="sidebar-nav">
-            <li class="sidebar-header">Pages</li>
+            <!-- <li class="sidebar-header">Pages</li> -->
 
             <li class="sidebar-item active">
               <a class="sidebar-link" href="index.html">
-                <i class="align-middle" data-feather="sliders"></i>
-                <span class="align-middle">Dashboard</span>
+                <i class="align-middle" data-feather="package"></i>
+                <span class="align-middle">Packages</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="pages-blank.html">
+                <i class="align-middle" data-feather="home"></i>
+                <span class="align-middle">Home</span>
               </a>
             </li>
 
@@ -56,6 +64,249 @@
                 <span class="align-middle">Profile</span>
               </a>
             </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="pages-about.html">
+                <i class="align-middle" data-feather="info"></i>
+                <span class="align-middle">About</span>
+              </a>
+            </li>
+
+            <!-- <li class="sidebar-item">
+              <a
+                class="sidebar-link"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="align-middle" data-feather="filter"></i>
+                <span class="align-middle">Filter</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" />
+                    </i>
+                    <span class="align-middle">Temple</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" />
+                    </i>
+                    <span class="align-middle">Beach</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" />
+                    </i>
+                    <span class="align-middle">Park</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" />
+                    </i>
+                    <span class="align-middle">Museum</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" />
+                    </i>
+                    <span class="align-middle">Waterfalls</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" />
+                    </i>
+                    <span class="align-middle">Hills</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <button type="button" class="btn btn-primary">
+                      Apply filters
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </li> -->
+
+            <!-- js start -->
+
+            <li class="sidebar-item">
+              <a
+                class="sidebar-link"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="align-middle" data-feather="filter"></i>
+                <span class="align-middle">Filter</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" id="templeCheckbox" />
+                    </i>
+                    <span class="align-middle">Temple</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" id="beachCheckbox" />
+                    </i>
+                    <span class="align-middle">Beach</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" id="parkCheckbox" />
+                    </i>
+                    <span class="align-middle">Park</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" id="museumCheckbox" />
+                    </i>
+                    <span class="align-middle">Museum</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" id="waterfallsCheckbox" />
+                    </i>
+                    <span class="align-middle">Waterfalls</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <i class="align-middle">
+                      <input type="checkbox" id="hillsCheckbox" />
+                    </i>
+                    <span class="align-middle">Hills</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="applyFilters()"
+                    >
+                      Apply filters
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- js stop -->
+
+            <!-- <li>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Temple
+                    </label>
+                  </div>
+                </li> -->
+
+            <!--     <li>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Beach
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Park
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Museum
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Waterfalls
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Hills
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-outline-primary">
+                    Primary
+                  </button>
+                </li> -->
+            <!-- </ul>
+            </li> -->
 
             <!-- <li class="sidebar-item">
 						<a class="sidebar-link" href="pages-sign-in.html">
@@ -359,10 +610,10 @@
                     ><i class="align-middle me-1" data-feather="user"></i>
                     Profile</a
                   >
-                  <a class="dropdown-item" href="#"
+                  <!-- <a class="dropdown-item" href="#"
                     ><i class="align-middle me-1" data-feather="pie-chart"></i>
                     Analytics</a
-                  >
+                  > -->
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="index.html"
                     ><i class="align-middle me-1" data-feather="settings"></i>
