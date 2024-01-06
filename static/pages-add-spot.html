@@ -67,7 +67,7 @@
               </a>
             </li> -->
 
-            <li class="sidebar-item active">
+            <li class="sidebar-item">
               <a class="sidebar-link" href="pages-blank.html">
                 <i class="align-middle" data-feather="home"></i>
                 <span class="align-middle">Home</span>
@@ -95,8 +95,8 @@
               </a>
             </li>
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-add-spot.html">
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="#">
                 <i class="align-middle" data-feather="upload"></i>
                 <span class="align-middle">Add Spot</span>
               </a>
@@ -417,41 +417,100 @@
         </nav>
 
         <main class="content">
-          <section class="dashboard">
-            <!--  <h2>User Dashboard</h2>   -->
-            <form>
-              <label for="budget">Budget:</label><br />
-              <!--<input type="number" id="budget" name="budget" required />  -->
-              <select name="budge" id="budget" required>
-                <option value="">Select budget</option>
-                <option value="1000-2500">1000-2500</option>
-                <option value="2500-5000">2500-5000</option>
-                <option value="5000-7500">5000-7500</option>
-                <option value="7500-10000">7500-1000</option>
-                <option value="10000-15000">10000-15000</option>
-                <option value="15000+">Above 15000</option>
-              </select>
+          <div class="card">
+            <!-- <div class="card-header">
+              <h5 class="card-title mb-0">Input</h5>
+            </div> -->
+            <div class="card-body">
+              <p>
+                User can contribute to th website by adding new tourist spots to
+                the user-diven database.
+              </p>
+            </div>
+
+            <!-- <div class="card-header">
+              <h5 class="card-title mb-0">Enter Details</h5>
+            </div> -->
+
+            <div class="card-body">
+              <h5 class="card-title mb-0">Enter Details</h5>
+              <br />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tourist Spot Name"
+              />
+              <br />
+
+              <textarea
+                class="form-control"
+                rows="2"
+                placeholder="Tell me about this place"
+              ></textarea>
 
               <br />
 
-              <label for="destination">Destination:</label><br />
-              <!--
-				  <input
-					type="text"
-					id="destination"
-					name="destination"
-					placeholder="Enter Destination"
-				  /><br /> -->
-              <select name="Destination" id="Destination" required>
-                <option value="">Select Destination</option>
-                <option value="Kannur">Kannur</option>
-                <option value="Kozhikode">Kozhikode</option>
-              </select>
+              <h5 class="card-title mb-0">
+                Restaurant and Accommodation Available or Not
+              </h5>
               <br />
 
-              <button class="submit" type="submit">Search</button>
-            </form>
-          </section>
+              <label class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inline-radios-example"
+                  value="option1"
+                />
+                <span class="form-check-label"> Available </span>
+              </label>
+              <label class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inline-radios-example"
+                  value="option2"
+                />
+                <span class="form-check-label"> Not </span>
+              </label>
+
+              <br />
+
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Restaurant and Accommodation Name"
+              />
+
+              <br />
+
+              <h5 class="card-title mb-0">Upload spot photos</h5>
+              <br />
+
+              <input
+                type="file"
+                class="form-control"
+                placeholder="Tourist Spot Name"
+              />
+              <br />
+
+              <input
+                type="file"
+                class="form-control"
+                placeholder="Tourist Spot Name"
+              />
+              <br />
+
+              <input
+                type="file"
+                class="form-control"
+                placeholder="Tourist Spot Name"
+              />
+              <br />
+
+              <button class="btn btn-secondary">Submit</button>
+            </div>
+          </div>
         </main>
 
         <footer class="footer">
