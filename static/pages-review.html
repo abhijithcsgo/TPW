@@ -81,14 +81,14 @@
               </a>
             </li>
 
-            <li class="sidebar-item active">
+            <li class="sidebar-item">
               <a class="sidebar-link" href="pages-about.html">
                 <i class="align-middle" data-feather="info"></i>
                 <span class="align-middle">About</span>
               </a>
             </li>
 
-            <li class="sidebar-item">
+            <li class="sidebar-item active">
               <a class="sidebar-link" href="pages-review.html">
                 <i class="align-middle" data-feather="edit-2"></i>
                 <span class="align-middle">Review</span>
@@ -392,10 +392,10 @@
                     ><i class="align-middle me-1" data-feather="user"></i>
                     Profile</a
                   >
-                  <a class="dropdown-item" href="#"
+                  <!-- <a class="dropdown-item" href="#"
                     ><i class="align-middle me-1" data-feather="pie-chart"></i>
                     Analytics</a
-                  >
+                  > -->
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="index.html"
                     ><i class="align-middle me-1" data-feather="settings"></i>
@@ -417,21 +417,64 @@
         </nav>
 
         <main class="content">
-          The Trip Planner website is a CS project aimed at providing users with
-          a convenient platform to plan their trips. The website offers a
-          user-friendly interface where users can input their available time and
-          budget. Additionally users have option to specify their preferred
-          destination. Based on these inputs, the website generates a list of
-          tour packages that match the user's criteria. Users can further refine
-          their search by selecting preferred landscapes such as beaches, hills,
-          rivers, waterfalls, etc. The website also provides additional features
-          such as weather updates, nearby tourist spots, itinerary suggestions,
-          and information on restaurants and accommodations. Furthermore, users
-          can contribute to the website by adding new tourist spots to the
-          user-driven database. Along with this user can review their travel
-          experience. The Trip Planner website simplifies the trip planning
-          process, offering users a centralized platform to access all the
-          necessary information for their travel plans.
+          <div class="card">
+            <div class="card-body">
+              <p>
+                users can contribute to the website by adding new tourist spots
+                to the user-driven database. Along with this user can review
+                their travel experience.
+              </p>
+
+              <form action="">
+                <h5 class="card-title mb-0">Enter Details</h5>
+                <br />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="District"
+                  required
+                />
+                <br />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Spot Name"
+                  required
+                />
+                <br />
+
+                <textarea
+                  class="form-control"
+                  rows="2"
+                  placeholder="Reviews"
+                  required
+                ></textarea>
+
+                <br />
+
+                <h5 class="card-title mb-0">Upload photos</h5>
+                <br />
+
+                <input
+                  type="file"
+                  class="form-control"
+                  placeholder="Tourist Spot Name"
+                />
+                <br />
+
+                <input
+                  type="file"
+                  class="form-control"
+                  placeholder="Tourist Spot Name"
+                />
+                <br />
+
+                <button class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+          </div>
         </main>
 
         <footer class="footer">
@@ -445,52 +488,10 @@
                     target="_blank"
                     ><strong>Trip planner</strong></a
                   >
-                  <!-- -
-                  <a
-                    class="text-muted"
-                    href="https://adminkit.io/"
-                    target="_blank"
-                    ><strong>Bootstrap Admin Template</strong></a
-                  > -->
+
                   &copy;
                 </p>
               </div>
-              <!-- <div class="col-6 text-end">
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a
-                      class="text-muted"
-                      href="https://adminkit.io/"
-                      target="_blank"
-                      >Support</a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="text-muted"
-                      href="https://adminkit.io/"
-                      target="_blank"
-                      >Help Center</a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="text-muted"
-                      href="https://adminkit.io/"
-                      target="_blank"
-                      >Privacy</a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      class="text-muted"
-                      href="https://adminkit.io/"
-                      target="_blank"
-                      >Terms</a
-                    >
-                  </li>
-                </ul>
-              </div> -->
             </div>
           </div>
         </footer>
